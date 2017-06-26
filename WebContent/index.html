@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>在线阅卷系统</title>
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default" style="margin-bottom:0;border:0;border-radius:0;">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-grain"></span>&nbsp;网上阅卷系统</a>
+        </div>
+
+       
+        <span class="navbar-text"style="float:right;">欢迎登录网上阅卷系统</span>
+      </div>
+      </nav>
+    
+    <div class="container col-md-3 col-md-offset-4">
+      </br></br>
+      <h2 class="form-signin-heading">请登录</h2>
+      <label for="inputID" class="sr-only">用户名</label>
+      <input type="text" id="inputID" class="form-control" placeholder="用户名" required autofocus>
+      <label for="inputPassword" class="sr-only">密码</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+      <div class="radio">
+        <label>
+          <input type="radio" value="teacher">
+          教  师
+        </label>
+        <label>
+          <input type="radio" value="administrator">
+          管理员
+        </label>         
+      </div>
+      <button id="login" type="submit" class="btn btn-info btn-block">登录</button>
+    </div> 
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('#login').click(function (){
+      window.location.href="./tpls/marking.html";   
+    })
+  })
+  </script> 
+  </body>
+</html>
